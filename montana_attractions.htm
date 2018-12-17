@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Montana Parks</title>
+<style type="text/css">
+#montana_attractions {
+	position:absolute;
+	left:5px;
+	top:210px;
+	width:470px;
+	height:375px;
+	z-index:1;
+}
+#northern_map {
+	position:absolute;
+	left:600px;
+	top:210px;
+	width:500px;
+	height:375px;
+	z-index:2;
+	visibility: visible;
+}
+#central_map {
+	position:absolute;
+	left:600px;
+	top:210px;
+	width:500px;
+	height:375px;
+	z-index:3;
+	visibility: hidden;
+}
+#southern_map {
+	position:absolute;
+	left:600px;
+	top:210px;
+	width:500px;
+	height:375px;
+	z-index:4;
+	visibility: hidden;
+}
+</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body background="images/parks_bkg.jpg">
+<div id="montana_attractions"><img src="images/montana_attractions.jpg" name="montana_map" width="500" height="375" border="0" usemap="#montana_mapMap" id="montana_map" />
+  <map name="montana_mapMap" id="montana_mapMap">
+    <area shape="rect" coords="5,5,494,139" href="#" onmouseover="MM_showHideLayers('montana_attractions','','show','northern_map','','show','central_map','','hide','southern_map','','hide')" />
+    <area shape="rect" coords="7,139,494,242" href="#" onmouseover="MM_showHideLayers('montana_attractions','','show','northern_map','','hide','central_map','','show','southern_map','','hide')" />
+    <area shape="rect" coords="7,243,494,370" href="#" onmouseover="MM_showHideLayers('montana_attractions','','show','northern_map','','hide','central_map','','hide','southern_map','','show')" />
+  </map>
+</div>
+<div id="northern_map"><img src="images/northern_map.jpg" alt="Northern Montana Features" name="northern_montana" width="500" height="375" id="northern_montana" /></div>
+<div id="central_map"><img src="images/central_map.jpg" alt="Central Montana Features" name="central_montana" width="500" height="375" id="central_montana" /></div>
+<div id="southern_map"><img src="images/southern_map.jpg" alt="Southern Montana Features" name="southern_montana" width="500" height="375" id="southern_montana" /></div>
+<h1>Montana Attractions</h1>
+<p>Montana has a variety of national parks, historic sites, and recreational areas. Two of the more popular parks are Yellowstone National Park and Glacier National Park. Some other popular recreational areas and historic sites include the Big Hole National Battlefield, the Nez Perce National Historical Park, the Bighorn Canyon National Recreation Area, and the Grant-Kohrs Ranch.</p>
+<p>Move the mouse pointer over the Montana map to view the information and location of popular Montana attractions.</p>
+<p><a href="index.htm">Home</a></p>
+</body>
+</html>
